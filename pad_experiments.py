@@ -385,7 +385,7 @@ def main():
                       class_weights=class_weights,
                       crop_encoding=crop_encoding,
                       shape_in=[timestep,4,64,64],
-                      hid_S=16,
+                      hid_S=64,
                       hid_T=256,
                       N_S=4,
                       N_T=8,
