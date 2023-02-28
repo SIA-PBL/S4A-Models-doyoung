@@ -392,7 +392,8 @@ def main():
                       incep_ker=[3,5,7,11], 
                       groups=8, 
                       learning_rate=0.001)
-        
+        model.load_state_dict(torch.load('./s4a_expelriment_10000.pth'), strict=False)
+
         if not args.train:
             model = SimVP.load_from_checkpoint(
                 resume_from_checkpoint,
